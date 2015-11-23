@@ -10,7 +10,7 @@
 
     namespace.switcherComponent = app.newClass({
         extend: function () {
-            return app.components.abstractComponent;
+            return app.core.component.abstractComponent;
         }
     });
     
@@ -86,6 +86,11 @@
         this._activeID =  id;
         this._refreshActive();
         return this;
+    };
+
+
+    namespace.switcherComponent.prototype.getActive = function(id) {
+        return this._activeID;
     };
 
  

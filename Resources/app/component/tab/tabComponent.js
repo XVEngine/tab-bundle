@@ -3,7 +3,7 @@
 
     namespace.tabComponent = app.newClass({
         extend: function () {
-            return app.components.abstractComponent;
+            return app.core.component.abstractComponent;
         }
     });
     
