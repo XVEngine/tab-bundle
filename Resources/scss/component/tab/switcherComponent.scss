@@ -1,0 +1,11 @@
+xv-switcher {
+    display: block;
+    
+    > div {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+}
